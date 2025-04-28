@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import pdf from "../../Assets/../Assets/Claudinei_Moreira.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
@@ -59,25 +59,27 @@ function ResumeNew() {
 
         {/* Botões para navegação */}
         <Row style={{ justifyContent: "center", position: "relative" }}>
-        <Button
-            variant="secondary"
-            onClick={goToPreviousPage}
-            disabled={pag === 1}
-            style={{ width: "100%", maxWidth: "250px" }}
-          >
-            Página Anterior
-          </Button>
+          <Col xs={12} md="auto" className="d-flex justify-content-center">
+            <Button
+              variant="primary"
+              onClick={goToPreviousPage}
+              disabled={pag === 1}
+              style={{ width: "100%", maxWidth: "250px" }}
+            >
+              Página Anterior
+            </Button>
+          </Col>
 
-          &nbsp;
-          
-          <Button
-            variant="primary"
-            onClick={goToNextPage}
-            disabled={pag === totalPages}
-            style={{ width: "100%", maxWidth: "250px" }}
-          >
-            Próxima Página
-          </Button>
+          <Col xs={12} md="auto" className="d-flex justify-content-center">
+            <Button
+              variant="primary"
+              onClick={goToNextPage}
+              disabled={pag === totalPages}
+              style={{ width: "100%", maxWidth: "250px" }}
+            >
+              Próxima Página
+            </Button>
+          </Col>
         </Row>
       </Container>
     </div>
