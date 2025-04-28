@@ -59,20 +59,20 @@ function ResumeNew() {
 
         {/* Botões para navegação */}
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
+        <Button
             variant="secondary"
             onClick={goToPreviousPage}
-            disabled={pag === 1} // Desabilita o botão na primeira página
-            style={{ maxWidth: "250px", marginRight: "10px" }}
+            disabled={pag === 1}
+            style={{ width: "100%", maxWidth: "250px" }}
           >
             Página Anterior
           </Button>
-
+          &nbsp;
           <Button
             variant="primary"
             onClick={goToNextPage}
-            disabled={pag === totalPages} // Desabilita o botão na última página
-            style={{ maxWidth: "250px" }}
+            disabled={pag === totalPages}
+            style={{ width: "100%", maxWidth: "250px" }}
           >
             Próxima Página
           </Button>
