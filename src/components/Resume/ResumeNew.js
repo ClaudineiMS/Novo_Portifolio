@@ -67,7 +67,9 @@ function ResumeNew() {
           >
             Página Anterior
           </Button>
+
           &nbsp;
+          
           <Button
             variant="primary"
             onClick={goToNextPage}
