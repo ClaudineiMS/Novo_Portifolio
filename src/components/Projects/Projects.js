@@ -15,7 +15,7 @@ function Projects() {
           Meus projetos <strong className="purple">recentes </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Grafico}
               isBlog={false}
@@ -24,7 +24,7 @@ function Projects() {
               ghLink="https://github.com/ClaudineiMS/Graficos"
               demoLink="https://graficos-lake.vercel.app/"
             />
-          </Col>
+          </Col> */}
 {/* 
           <Col md={4} className="project-card">
             <ProjectCard
