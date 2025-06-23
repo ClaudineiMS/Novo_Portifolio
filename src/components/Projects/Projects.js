@@ -25,7 +25,7 @@ function Projects() {
               demoLink="https://graficos-lake.vercel.app/"
             />
           </Col>
-
+{/* 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Energia}
@@ -76,7 +76,7 @@ function Projects() {
               description="Pequeno Sistema de Informação Geográfica com uma camada carregada, que implementa algumas funcionalidades básicas, tais como: recuperação de dados ao clicar em um ponto da camada, exibição de uma tabela de atributos para listar todos os dados da camada e sobreposição de um grid de coordenadas no mapa."
               ghLink="https://github.com/ClaudineiMS/SIG"
             />
-          </Col>
+          </Col> */}
 
         </Row>
       </Container>
